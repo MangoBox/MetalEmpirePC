@@ -15,26 +15,6 @@
 		<img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle">
 		<img src="MainBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		
-		<table style="width:100%", table align = "center">
-			<tr>
-				<th><h2><a href="coreSeries.php">Core Series</a></h2></th>
-				<th><h2><a href="coreSeries.php">Magma Series</a></h2></th>
-				<th><h2><a href="coreSeries.php">Titanium Series</a></h2></th>
-			</tr>
-			<tr>
-				<th><p>Starting from $799</p></th>
-				<th><p>Starting from $1299</p></th>
-				<th><p>Starting from $2499</p></th>
-			</tr>
-			<tr>
-				<th><a href="coreSeries.php"> <img src="MoreDetailsButton.png" alt="MoreDetails" style="width:60%;height:60%;"></a></th>
-				<th><a href="magmaSeries.php"> <img src="MoreDetailsButton.png" alt="MoreDetails" style="width:60%;height:60%;"></a></th>
-				<th><a href="titaniumSeries.php"> <img src="MoreDetailsButton.png" alt="MoreDetails" style="width:60%;height:60%;"></a></th>
-				
-			</tr>
-		
-		
-		
 		<p><table style="width:75%", table align = "center">
 			<tr>
 				<th>Processor</th>
