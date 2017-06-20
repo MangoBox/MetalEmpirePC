@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    margin:0;
+    padding:0;
+	width: 100%;
+	z-index: 0;
+}
+
+h2 {
+    font-family: 'Coalition';
+    font-style: italic;
+    font-size: 20px;
+    width: 100%;
+}
+
+p {
+	font-family: 'CaviarDreams';
+    font-size: 20px;
+    width: 100%;
+}
+
+table, th, td {
+	padding: 10px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+@font-face {
+    font-family: 'Coalition'; /*a name to be used later*/
+    src: url('Coalition_v2.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'CaviarDreams'; /*a name to be used later*/
+    src: url('CaviarDreams.ttf'); /*URL to font*/
+}
