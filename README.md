@@ -1,1 +1,1 @@
-htdocs
+Me and Daniels IST Website for Tech! :D
