@@ -16,17 +16,6 @@
 		<img src="MainBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		
 		<p><table style="width:75%", table align = "center">
-			<tr>
-				<th>Processor</th>
-				<th>Graphics Card</th>
-				<th>RAM</th>
-				<th>Case</th>
-				<th>Cooler</th>
-				<th>Motherboard</th>
-				<th>Storage 1</th>
-				<th>Storage 2</th>
-				<th>Power Supply</th>
-			</tr>
 			<?php
 				$servername = "localhost";
 				$username = "root";
@@ -44,16 +33,36 @@
 				$productDetails[6] = "storage1";
 				$productDetails[7] = "storage2";
 				$productDetails[8] = "psu";
+			
+				$productName[0] = "Processor";
+				$productName[1] = "Graphics Card";
+				$productName[2] = "Memory";
+				$productName[3] = "Case";
+				$productName[4] = "Cooler";
+				$productName[5] = "Motherboard";
+				$productName[6] = "Drive 1";
+				$productName[7] = "Drive 2";
+				$productName[8] = "Power Supply";
 				
-				for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i ++) {
+			
+				
+				for($i = 0; $i < count($productDetails); $i ++) {
 					echo "<tr><p>";
-					for( $p = 0; $p < count($productDetails); $p++) {
+					for( $p = 0; $p < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $p++) {
 						echo "<th><p>";
+						echo $productName[$p];
 						echo mysql_result(mysql_query("SELECT " . $productDetails[$p] . " FROM productdetails"), $i);
 						echo "</th></p>";
 					}
 					echo "</tr></p>";
 				}
+			
+			for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i ++) {
+				
+				
+			}
+			
+			
 			
 			?>
 			
