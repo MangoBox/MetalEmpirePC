@@ -19,6 +19,12 @@ p {
     width: 100%;
 }
 
+p2 {
+    font-family: 'CaviarDreams_Bold';
+    font-size: 20px;
+    width: 100%;
+}
+
 table, th, td {
 	padding: 10px;
 }
@@ -35,4 +41,9 @@ img {
 @font-face {
     font-family: 'CaviarDreams'; /*a name to be used later*/
     src: url('CaviarDreams.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'CaviarDreams_Bold'; /*a name to be used later*/
+    src: url('CaviarDreams_Bold.ttf'); /*URL to font*/
 }
