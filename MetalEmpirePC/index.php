@@ -17,9 +17,9 @@
 		
 		<table style="width:100%", table align = "center">
 			<tr>
-				<th><h2><a href="coreSeries.php">Core Series</a></h2></th>
-				<th><h2><a href="coreSeries.php">Magma Series</a></h2></th>
-				<th><h2><a href="coreSeries.php">Titanium Series</a></h2></th>
+				<th><h2>Core Series</th>
+				<th><h2>Magma Series</h2></th>
+				<th><h2>Titanium Series</h2></th>
 			</tr>
 			<tr>
 				<th><p>Starting from $799</p></th>

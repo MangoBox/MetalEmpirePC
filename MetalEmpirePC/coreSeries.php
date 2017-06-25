@@ -14,7 +14,7 @@
 		<script src="testJavascript.js"></script>
 		<!-- <img src="MainLogoCompact.png" alt="Main Logo" style="width:1298vw;height:184.5vw;"> -->
 		<img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle">
-		<img src="CoreSeries2.png" alt="Core Series" style="width:100%;height:100%;">
+		<img src="CoreSeriesBanner.png" alt="Core Series" style="width:100%;height:100%;">
 		
 		<p><table style="width:75%", table align = "center">
 			<?php
@@ -45,9 +45,9 @@
 				$productName[7] = "Drive 2";
 				$productName[8] = "Power Supply";
 				
-				echo "<tr><th><p>Core A1</p></th>";
-				echo "<th><p>Core A2</p></th>";
-				echo "<th><p>Core A3</p></th></tr>";
+				echo "<tr><th><hl>Core A1</hl></th>";
+				echo "<th><hl>Core A2</hl></th>";
+				echo "<th><hl>Core A3</hl></th></tr>";
 				
 				for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i++) {
 					echo "<tr><p>";

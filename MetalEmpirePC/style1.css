@@ -13,6 +13,13 @@ h2 {
     width: 100%;
 }
 
+hl {
+    font-family: 'Coalition';
+    font-style: italic;
+    font-size: 45px;
+    width: 100%;
+}
+
 p {
 	font-family: 'CaviarDreams';
     font-size: 20px;
