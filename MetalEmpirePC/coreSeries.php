@@ -14,7 +14,7 @@
 		<script src="testJavascript.js"></script>
 		<!-- <img src="MainLogoCompact.png" alt="Main Logo" style="width:1298vw;height:184.5vw;"> -->
 		<img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle">
-		<img src="MainBanner.png" alt="Main Banner" style="width:100%;height:100%;">
+		<img src="CoreSeries2.png" alt="Core Series" style="width:100%;height:100%;">
 		
 		<p><table style="width:75%", table align = "center">
 			<?php
