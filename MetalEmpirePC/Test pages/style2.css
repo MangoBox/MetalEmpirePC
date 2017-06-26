@@ -1,0 +1,31 @@
+form {
+	text-align: center;
+	background-color: white;
+	border: 25px solid green;
+	padding: 25px;
+	}
+	
+body {
+	background-image: url("backgroundimagepc3.jpg"); /* image subject to change*/
+	background-repeat: no-repeat;
+	background-color: #CCCCCC;
+	background-position: center top;
+	}
+	
+.contentbox {
+	width:70%;
+	border: 1px solid black;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 0;
+	}
+	
+.mainlogostyle {
+	width:70%;
+	height:10%;
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: rgb(255,100,0);
+	}
+	
