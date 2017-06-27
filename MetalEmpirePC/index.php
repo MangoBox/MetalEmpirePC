@@ -35,7 +35,7 @@
 		
 		
 		
-		<p><table style="width:75%", table align = "center",>
+		<p><table style="width:75%", table align = "center">
 			<tr>
 				<th>Processor</th>
 				<th>Graphics Card</th>
