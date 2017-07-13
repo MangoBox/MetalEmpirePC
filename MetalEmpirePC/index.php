@@ -78,6 +78,19 @@
 			?>
 		</table>
 	</p>
+	
+	</div>
+	
+	<br>
+	<hr>
+	<br>
+	
+	<div style="position: relative; min-height: 100%; top: 0px;">
+	<img src = "MemoryUpgrade.png">
+		<hl style font-size = "120px">Features</hl>
+		
+	</div>
+	
 	</body>
 
 </html> 

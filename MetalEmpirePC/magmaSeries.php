@@ -12,7 +12,7 @@
 
 		<script src="testJavascript.js"></script>
 		<!-- <img src="MainLogoCompact.png" alt="Main Logo" style="width:1298vw;height:184.5vw;"> -->
-		<img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle">
+		<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
 		<img src="MagmaSeriesBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		
 		<p><table style="width:75%", table align = "center">

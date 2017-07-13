@@ -12,9 +12,10 @@
 
 		<script src="testJavascript.js"></script>
 		<!-- <img src="MainLogoCompact.png" alt="Main Logo" style="width:1298vw;height:184.5vw;"> -->
-		<img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle">
+		<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
 		<img src="TitaniumBanner.png" alt="Main Banner" style="width:100%;height:100%;">
-		
+		<br>
+		<hr>
 		<p><table style="width:75%", table align = "center">
 			<?php
 				$servername = "localhost";
@@ -59,17 +60,15 @@
 					}
 					echo "</tr></p>";
 				}
-			
-			for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i ++) {
-				
-				
-			}
-			
-			
-			
 			?>
 		</table>
+		
 	</p>
+	<hr>
+	<br>
+	<div style="display:flex;justify-content:center;align-items:center;">
+		<hl style font-size = "120px">Features</hl>
+	</div>
 	</body>
 
 </html> 

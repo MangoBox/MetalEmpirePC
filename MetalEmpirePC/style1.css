@@ -17,7 +17,11 @@ hl {
     font-family: 'Coalition';
     font-style: italic;
     font-size: 45px;
-    width: 100%;
+    text-align: center;
+}
+
+div.center {
+  text-align: center;
 }
 
 p {
