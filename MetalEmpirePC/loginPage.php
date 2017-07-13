@@ -10,7 +10,7 @@
 	session_start();
 	if(isset($_SESSION["username"])) {
 		echo "You are currently logged in!";
-		echo " Welcome, " . $_SESSION["username"];
+		echo " Welcome, " . $_SESSION["username"] . "!";
 	}
 
 ?>

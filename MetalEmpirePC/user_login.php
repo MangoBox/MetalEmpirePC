@@ -10,10 +10,10 @@
 	mysql_select_db("MetalEmpirePC");
 
 	//Collecting variables from superglobal variables.
-	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$username = $_POST["username"];
+	$password = $_POST["password"];
 
-	//SQL Injection prevention. Probably won't matter.
+	//SQL Injection prevention.
 	$username = stripslashes($username);
 	$password = stripslashes($password);
 	$username = mysql_real_escape_string($username);
@@ -26,9 +26,32 @@
 	//Gets the number of users that match that request. 1 must be resulted in order to prove there
 	//is a user in the table with that login information.
 	$result_count = mysql_num_rows($result);
+	session_start();
 
+	//If the user appears to be already logged in!
+	if(isset($_SESSION["username"])) {
+		echo "You are already logged in!";
+		echo "<br><a href = \"loginPage.php\">Back to Login Page</a>";
+		die;
+	}
+
+	//If either of the login fields are empty.
+	if($_POST['username'] === '' || $_POST['password'] === '') {
+		echo "You must fill all login fields.";
+		echo "<br><a href = \"loginPage.php\">Back to Login Page</a>";
+		die;
+	}
+
+	//If the username field is too long (> 24 characters)
+	if(strlen($_POST['username']) > 24) {
+		echo "Your requested username is too long.";
+		echo "<br><a href = \"loginPage.php\">Back to Login Page</a>";
+		die;
+	}
+
+	//Log the user in.
 	if($result_count == 1) {
-		session_start();
+		
 		$_SESSION["username"] = $username;
 		$_SESSION["password"] = $password;
 		header("location: login_success.php");

@@ -11,5 +11,6 @@
  <html>
  	<body>
  		Login Successful!
+ 		<a href = "loginPage.php"> Back to Login page </a>
  	</body>
  </html>
