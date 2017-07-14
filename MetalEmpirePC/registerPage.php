@@ -5,6 +5,22 @@
 </head>
 <title>MetalEmpirePC Register</title>
 <body>
+<div>
+		<ul>
+			<li><a href="test">Home</a></li>
+		
+			<li class="dropdown">
+				<a href="test" class="dropbtn">PC Series</a>
+				<div class="dropdown-content">
+					<a href="test">Core</a>
+					<a href="test">Magma</a>
+					<a href="test">Titanium</a>
+				</div>
+			</li>
+			<li><a href="test">Contact & Support</a></li>
+			<li><a href="test">FAQ</a></li>
+		</ul>
+	</div>
 	<br>
 	<h1 title="test">MetalEmpirePC Register</h1>
 	<br>
