@@ -10,9 +10,31 @@
 		<body>
 		
 
-		<script src="testJavascript.js"></script>
 		<!-- <img src="MainLogoCompact.png" alt="Main Logo" style="width:1298vw;height:184.5vw;"> -->
 		<img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle">
+
+		<hr>
+		<table style = "width: 100%", table align = "center">
+			<tr>
+				<th>
+					<h2>Reviews</h2>
+				</th>
+				<th>
+					<h2>Forums</h2>
+				</th>
+				<th>
+					<h2>About us</h2>
+				</th>
+				<th>
+					<h2><a href = "loginPage.php">Log In</a></h2>
+				</th>
+				<th>
+					<h2><a href = "registerPage.php">Register</a></h2>
+				</th>
+
+			</tr>
+		</table>
+
 		<img src="MainBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		
 		<table style="width:100%", table align = "center">
