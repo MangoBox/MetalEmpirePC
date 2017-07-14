@@ -16,7 +16,7 @@
 				<br>
 				Rating:
 				<br>
-				<input type="radio" name="rating" value="rating1"> ★☆☆☆☆<br>
+				<input type="radio" name="rating" value="rating1" selected> ★☆☆☆☆<br>
 				<input type="radio" name="rating" value="rating2"> ★★☆☆☆<br>
 				<input type="radio" name="rating" value="rating3"> ★★★☆☆<br>
 				<input type="radio" name="rating" value="rating4"> ★★★★☆<br>

@@ -9,28 +9,40 @@
 	if($_POST["rating"] === '' || $_POST["title"] === '' || $_POST["review_text"] === '' || $_POST["product_select"] === 'Select a Product') {
 			echo "You have not filled in one of the fields. Try again.";
 			echoReturnToLogon();
-	}	
-	
-	
+	}
+
+	//Review text & title variables.
+	$review_title = $_POST["title"];
+	$review_text = $_POST["review_text"];
+
+
 	//Database connection information
 	$host = "localhost";
 	$dbusername = "root";
 	$dbpassword = "";
 
+	$username = $_SESSION["username"];
+	$password = $_SESSION["password"];
+
 	//Connect to database and select relevant database.
 	mysql_connect($host, $dbusername, $dbpassword) or die ("Database connection Failure.");
-	mysql_select_db("MetalEmpirePC");
+	mysql_select_db("MetalEmpirePC");	
 	
-	$sql_user_query = "SELECT * FROM users WHERE username = '$_SESSION[\"username\"]'";
-	$query_user = mysql_query($sql_user_query);
+
+	//Getting productID
+	$product_select = $_POST["product_select"];
+	$product_query = "SELECT productID FROM producttable WHERE productName = '$product_select'";
+	$product_query_result = mysql_result(mysql_query($product_query),0);
+
 	
-	mysql_result(mysql_query("SELECT * FROM users_reviews WHERE "),0);
+	//Getting user ID
+	$user_id = mysql_result(mysql_query("SELECT id FROM users WHERE username = '" . $_SESSION["username"] . "'"),0);
 	
+	//Getting date
+	$date_custom = date("l jS F Y");
 	
-	$sql_review_query = "INSERT INTO users (username, password)
-						VALUES ('$username', '$password')";
-	
-	
+	//Getting rating
+	//Uses global rating variable.
 	$rating = 1;
 	for($i = 1; $i <= 5; $i++) {
 		$rating_string = "rating" . $i;
@@ -39,18 +51,16 @@
 			$rating = $i;
 		}
 	}
+
+	$sql_review_query = "INSERT INTO user_reviews (userID, productID, date, rating, reviewText, reviewTitle)
+						VALUES ('$user_id', '$product_query_result', '$date_custom', '$rating', '$review_text', '$review_title')";
 	
-	//Rating is now the clamped integer value between 1 and 5.
-	echo $rating;
-
-
-
-
+	mysql_query($sql_review_query);
 
 	function echoReturnToLogon() {
 		echo "<br><a href = \"registerPage.php\">Previous Page</a>";
 		//Dodgy, but it works so whatever.
-		header("location:javascript://history.go(-1)");
+		//header("location:javascript://history.go(-1)");
 		die;
 	}
 ?>

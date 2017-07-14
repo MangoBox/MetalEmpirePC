@@ -71,5 +71,23 @@
 			?>
 		</table>
 	</p>
+
+	<!-- Reviews -->
+	<?php
+		$servername = "localhost";
+		$username = "root";
+		$password = "";
+		
+		mysql_connect("localhost","root","") or die ("not connected");
+		
+		mysql_select_db("metalempirepc") or die ("no db found");
+
+		for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM user_reviews"),0); $i++) {
+			//Long as hell, but basically iterates through the user reviews to find reviews on the relevant product.
+			if(mysql_result(mysql_query("SELECT productID FROM user_reviews"), $i) >= 0 && mysql_result(mysql_query("SELECT productID FROM user_reviews"), $i) <= 2) {
+				echo mysql_result(mysql_query("SELECT reviewText FROM user_reviews"),$i) . "<br>";
+			}
+		}
+ 	?>
 	</body>
 </html> 
