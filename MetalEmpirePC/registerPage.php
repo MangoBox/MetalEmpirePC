@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html> 
+<head> 
+	<link rel="stylesheet" href="style1.css">
+</head>
 <title>MetalEmpirePC Register</title>
 <body>
 	<br>
@@ -10,13 +13,13 @@
 		<fieldset>
 			<legend>Enter register Information</legend>
 
-			Username: <input type="text" name="username" color="gray">
+			Username: <input type="text" name="username" color="gray" required size=24>
 			<br>
 			<br>
-			Password: <input type="password" name="password">
+			Password: <input type="password" name="password" required>
 			<br>
 			<br>
-			Confirm Password: <input type="password" name="password_confirm">
+			Confirm Password: <input type="password" name="password_confirm" required>
 			<br>
 			<br>
 			<input type="submit" value="Register">

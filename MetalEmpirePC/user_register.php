@@ -17,12 +17,6 @@
 		echoReturnToLogon();
 	}
 
-	//Checks if the username field is longer than 24 characters.
-	if(strlen($_POST["username"]) > 24) {
-		echo "Your username was too long (" . strlen($_POST["username"]) . " characeters).<br>Try again with a username less than 24 characters.";
-		echoReturnToLogon();
-	}
-
 	//SQL Database connection.
 	//Database connection information
 	$host = "localhost";
