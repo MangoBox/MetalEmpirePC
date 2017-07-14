@@ -35,19 +35,6 @@
 		die;
 	}
 
-	//If either of the login fields are empty.
-	if($_POST['username'] === '' || $_POST['password'] === '') {
-		echo "You must fill all login fields.";
-		echo "<br><a href = \"loginPage.php\">Back to Login Page</a>";
-		die;
-	}
-
-	//If the username field is too long (> 24 characters)
-	if(strlen($_POST['username']) > 24) {
-		echo "Your requested username is too long.";
-		echo "<br><a href = \"loginPage.php\">Back to Login Page</a>";
-		die;
-	}
 
 	//Log the user in.
 	if($result_count == 1) {
