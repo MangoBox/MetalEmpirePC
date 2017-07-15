@@ -13,6 +13,44 @@
 		<script src="testJavascript.js"></script>
 		<!-- <img src="MainLogoCompact.png" alt="Main Logo" style="width:1298vw;height:184.5vw;"> -->
 		<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
+		<hr>
+		<table style = "width: 100%", table align = "center">
+			<tr>
+				<th>
+					<h2>Reviews</h2>
+				</th>
+				<th>
+					<h2>Forums</h2>
+				</th>
+				<th>
+					<h2>About us</h2>
+				</th>
+				<th>
+					<h2><a href = "loginPage.php">Log In</a></h2>
+				</th>
+				<th>
+					<h2><a href = "registerPage.php">Register</a></h2>
+				</th>
+
+			</tr>
+		</table>
+		<hr>
+		<!-- I'm aware this div attribute is depecrated. Can't be bothered integrating it into CSS (You can fix this daniel if you like :D) -->
+		<div class = 'titleLogin'>
+			<p class = 'p'>
+				<?php 
+					//This script checks whether the users is logged in.
+					session_start();
+					if(isset($_SESSION["username"])) {
+						//If the user is logged in.
+						echo "You are logged in! Welcome, <b>" . $_SESSION["username"] . "</b>!";
+						echo " <a href = logout.php>Logout</a>";
+					} else {
+						echo "You are not logged in. Log in or register above.";
+					}
+				?>			
+			</p>
+		</div>
 		<img src="TitaniumBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		<br>
 		<hr>

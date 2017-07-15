@@ -8,7 +8,8 @@ body {
 }
 */
 body {
-	background-image: url("backgroundimagepc3.jpg"); /* image subject to change*/
+	/* background-image: url("backgroundimagepc3.jpg"); /* image subject to change*/ 
+	/* I changed ^ this out for now, it makes some text hard to read */
 
 	background-position: center center;
 	background-attachment: fixed;
@@ -33,7 +34,42 @@ hl {
 }
 
 div.center {
-  text-align: center;
+    text-align: center;
+}
+
+.reviewSection {
+	margin-left: 25%;
+	margin-right: 25%;
+
+}
+
+.reviewSection .title {
+	text-align: center;
+	font-size: 65px;
+}
+
+.titleLogin .p {
+	text-align: right;
+	margin-right: 50%;
+}
+
+.review_title {
+	font-size: 35px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.yellow_star {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #e6b800;
+	font-size: 35px;
+}
+
+.review_subtitle {
+	font-size: 35px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 p {
@@ -50,7 +86,8 @@ p2 {
 
 table, th, td {
 	padding: 10px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
+	/* ^ this causes some problems too :( */
 }
 
 img {
@@ -76,9 +113,11 @@ img {
 form {
 	text-align: center;
 	background-color: white;
-	border: 25px solid green;
+	/* border: 25px solid green; */
+	/* ^ doesnt look amazing with theme */
 	padding: 25px;
-	}
+	font-family: 'CaviarDreams_Bold';
+}
 	
 
 	/*content box for content */

@@ -34,7 +34,23 @@
 
 			</tr>
 		</table>
-
+		<hr>
+		<!-- I'm aware this div attribute is depecrated. Can't be bothered integrating it into CSS (You can fix this daniel if you like :D) -->
+		<div class = 'titleLogin'>
+			<p class = 'p'>
+				<?php 
+					//This script checks whether the users is logged in.
+					session_start();
+					if(isset($_SESSION["username"])) {
+						//If the user is logged in.
+						echo "You are logged in! Welcome, <b>" . $_SESSION["username"] . "</b>!";
+						echo " <a href = logout.php>Logout</a>";
+					} else {
+						echo "You are not logged in. Log in or register above.";
+					}
+				?>			
+			</p>
+		</div>
 		<img src="MainBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		
 		<table style="width:100%", table align = "center">
@@ -69,6 +85,7 @@
 				<th>Storage 2</th>
 				<th>Power Supply</th>
 			</tr>
+			
 			<?php
 				$servername = "localhost";
 				$username = "root";
