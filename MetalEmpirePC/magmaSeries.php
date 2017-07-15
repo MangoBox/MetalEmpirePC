@@ -109,6 +109,19 @@
 			?>
 		</table>
 	</p>
+	<hr>
+
+		<div class = "reviewSection">
+			<h2 class = "title">Reviews</h2>
+			<!-- Reviews-->
+			<?php
+			include("create_user_review.php");
+			//Creates the user review script. 4 and 6 for product parameter.
+			createUserReview(3, 5);
+
+			?>
+		</div>
+
 	</body>
 
 </html> 

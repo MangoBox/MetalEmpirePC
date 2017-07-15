@@ -7,8 +7,8 @@
 	<style>
 	</style>
 </head>
-	<div style="position: relative; min-height: 100%; top: 0px;">
-		<body>
+<div style="position: relative; min-height: 100%; top: 0px;">
+	<body>
 		
 
 		<script src="testJavascript.js"></script>
@@ -41,14 +41,14 @@
 			<p class = 'p'>
 				<?php 
 					//This script checks whether the users is logged in.
-					session_start();
-					if(isset($_SESSION["username"])) {
+				session_start();
+				if(isset($_SESSION["username"])) {
 						//If the user is logged in.
-						echo "You are logged in! Welcome, <b>" . $_SESSION["username"] . "</b>!";
-						echo " <a href = logout.php>Logout</a>";
-					} else {
-						echo "You are not logged in. Log in or register above.";
-					}
+					echo "You are logged in! Welcome, <b>" . $_SESSION["username"] . "</b>!";
+					echo " <a href = logout.php>Logout</a>";
+				} else {
+					echo "You are not logged in. Log in or register above.";
+				}
 				?>			
 			</p>
 		</div>
@@ -56,7 +56,12 @@
 		<img src="CoreSeriesBanner.png" alt="Core Series" style="width:100%;height:100%;">
 		
 		<p><table style="width:75%", table align = "center">
-			<?php
+			
+			<tr><th><hl>Core A1</hl></th>
+				<th><hl>Core A2</hl></th>
+				<th><hl>Core A3</hl></th></tr>
+
+				<?php
 				$servername = "localhost";
 				$username = "root";
 				$password = "";
@@ -73,7 +78,7 @@
 				$productDetails[6] = "storage1";
 				$productDetails[7] = "storage2";
 				$productDetails[8] = "psu";
-			
+
 				$productName[0] = "Processor";
 				$productName[1] = "Graphics Card";
 				$productName[2] = "Memory";
@@ -83,11 +88,8 @@
 				$productName[6] = "Drive 1";
 				$productName[7] = "Drive 2";
 				$productName[8] = "Power Supply";
-				
-				echo "<tr><th><hl>Core A1</hl></th>";
-				echo "<th><hl>Core A2</hl></th>";
-				echo "<th><hl>Core A3</hl></th></tr>";
-				
+
+
 				for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i++) {
 					echo "<tr><p>";
 					for( $p = 0; $p < 3; $p++) {
@@ -99,58 +101,28 @@
 					}
 					echo "</tr></p>";
 				}
-			
-			for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i ++) {
-				
-				
-			}
-			
-			
-			
-			?>
-		</table>
-	</p>
-	<hr>
 
-	<div class = "reviewSection">
-		<h2 class = "title">Reviews</h2>
-		<!-- Reviews -->
-		<?php
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			
-			mysql_connect("localhost","root","") or die ("not connected");
-			
-			mysql_select_db("metalempirepc") or die ("no db found");
+				for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i ++) {
 
-			for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM user_reviews"),0); $i++) {
-				//Long as hell, but basically iterates through the user reviews to find reviews on the relevant product (s).
-				if(mysql_result(mysql_query("SELECT productID FROM user_reviews"), $i) >= 0 && mysql_result(mysql_query("SELECT productID FROM user_reviews"), $i) <= 2) {
 
-					//Gets the username of the published review. Probably more effcient ways of doing this.
-					$username = mysql_result(mysql_query("SELECT username FROM users"),mysql_result(mysql_query("SELECT userID FROM user_reviews"),$i));
-					
-					//Rating generation.
-					$rating = "<p class = 'yellow_star'>";
-					for($k = 1; $k <= 5; $k++) {
-						//If the rating does not match
-						if(mysql_result(mysql_query("SELECT rating FROM user_reviews"),$i) <= $k) {
-							$rating .= "☆";
-						} else {
-							$rating .= "★";
-						}
-					}
-					$rating .= "</p>";
-
-					echo "<br><hr>";
-					echo "<p class = \"review_title\"><b>" . mysql_result(mysql_query("SELECT reviewTitle FROM user_reviews"),$i) . "</p></b><br>";
-					echo "<p>Published by " . $username . " on " . mysql_result(mysql_query("SELECT date FROM user_reviews"),$i) . "<p><br>";
-					echo $rating;
-					echo mysql_result(mysql_query("SELECT reviewText FROM user_reviews"),$i) . "<br>";
 				}
-			}
-	 	?>
-	 	</div>
+
+
+
+				?>
+			</table>
+		</p>
+		<hr>
+
+		<div class = "reviewSection">
+			<h2 class = "title">Reviews</h2>
+			<!-- Reviews-->
+			<?php
+			include("create_user_review.php");
+			//Creates the user review script. 0 and 3 for product parameter.
+			createUserReview(0, 2);
+
+			?>
+		</div>
 	</body>
-</html> 
+	</html> 

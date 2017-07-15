@@ -107,6 +107,20 @@
 	<div style="display:flex;justify-content:center;align-items:center;">
 		<hl style font-size = "120px">Features</hl>
 	</div>
+
+	<hr>
+
+		<div class = "reviewSection">
+			<h2 class = "title">Reviews</h2>
+			<!-- Reviews-->
+			<?php
+			include("create_user_review.php");
+			//Creates the user review script. 7 and 9 for product parameter.
+			createUserReview(6, 8);
+
+			?>
+		</div>
+
 	</body>
 
 </html> 
