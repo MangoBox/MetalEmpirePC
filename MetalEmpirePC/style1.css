@@ -37,6 +37,11 @@ div.center {
     text-align: center;
 }
 
+div.featureLeft {
+	float: left;
+	width: 100%;
+}
+
 .reviewSection {
 	margin-left: 25%;
 	margin-right: 25%;
