@@ -53,7 +53,7 @@
 		</div>
 		<img src="MainBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		
-		<table style="width:100%", table align = "center">
+		<table style="width:100%">
 			<tr>
 				<th><h2>Core Series</th>
 				<th><h2>Magma Series</h2></th>
@@ -73,7 +73,7 @@
 		
 		
 		
-		<p><table style="width:75%", table align = "center">
+		<!-- <p><table style="width:75%", table align = "center">
 			<tr>
 				<th>Processor</th>
 				<th>Graphics Card</th>
@@ -119,14 +119,25 @@
 	</p>
 	
 	</div>
+	-->
 	
 	<br>
 	<hr>
 	<br>
-	
+	<hl>Features</hl>
+	<br>
+	<br>
+
 	<div class = "featureLeft">
-		<hl><img src = "MemoryUpgrade.png", style = "float: right">Features</hl>
-		
+		<hl><img src = "MemoryUpgrade.png", style = "float: right; padding: 40px"><br><br>Minimum 8gb Ram<br></hl>
+		<p>Multitasking and productivity is the future of computing. That means that anything below 8GB of RAM won't cut it.</p>
+		<p>We use lightning-fast DDR4 RAM to ensure unbeatable performance. Whether you're a film-maker, game designer or just browsing emails, 8GB of RAM ensures the best balance between price and performance.
+	</div>
+	<hr>
+	<div class = "featureRight">
+		<hl><img src = "SSDFeature.png", style = "float: left; padding: 40px"><br><br>Next-Gen Storage<br></hl>
+		<p>Lets face it: Hard drives are a pain. Loud, fragile and slow, they've been around for over 20 years. Its time to move on.</p>
+		<p>Solid State Drives, or SSDs for short, are the next generation of storage. They can obtain up to 10x the performance of standard Hard Drives! Not only will programs open in an instant, but a sub-15 second boottime will happen, every time!
 	</div>
 	
 	</body>

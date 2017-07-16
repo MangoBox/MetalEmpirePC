@@ -39,7 +39,16 @@ div.center {
 
 div.featureLeft {
 	float: left;
-	width: 100%;
+	margin-left:10%;
+	margin-right:10%;
+	width: 80%;
+}
+
+div.featureRight {
+	float: right;
+	margin-left:10%;
+	margin-right:10%;
+	width: 80%;
 }
 
 .reviewSection {
