@@ -1,15 +1,19 @@
 <?php
+
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	
+	mysql_connect("localhost","root","") or die ("Not connected to database!");
+	
+	mysql_select_db("metalempirepc") or die ("No database found!");
+
 	//I created a custom review script to move review processing away from product pages.
 	function createUserReview($min_product_name, $max_product_name) {
 		//Product Type is a integer supposedly between 1 and 3 that denotes what product series this is in.
-		$servername = "localhost";
-		$username = "root";
-		$password = "";
-		
-		mysql_connect("localhost","root","") or die ("Not connected to database!");
-		
-		mysql_select_db("metalempirepc") or die ("No database found!");
-
+	
+		//Refactored $i into a variable that loops through all user indexes. May cause problems with null referential indexes.
+		//mysql_result(mysql_query("SELECT userID FROM user_reviews order by userID asc limit 1"),0);
 		for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM user_reviews"),0); $i++) { 
 
 			//Long as hell, but basically iterates through the user reviews to find reviews on the relevant product (s).
@@ -17,7 +21,7 @@
 				mysql_result(mysql_query("SELECT productID FROM user_reviews"), $i) <= $max_product_name) {
 
 				//Gets the username of the published review. Probably more effcient ways of doing this.
-				$username = mysql_result(mysql_query("SELECT username FROM users"),mysql_result(mysql_query("SELECT userID FROM user_reviews"),$i));
+				$username = mysql_result(mysql_query("SELECT username FROM users"),mysql_result(mysql_query("SELECT userID FROM user_reviews"),$i) - 1);
 				
 				//Rating generation.
 				$rating = "<p class = 'yellow_star'>";

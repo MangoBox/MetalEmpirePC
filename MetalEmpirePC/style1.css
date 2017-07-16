@@ -90,6 +90,10 @@ p2 {
     width: 100%;
 }
 
+.reviewSection .reviewTitle_subtitle {
+	text-align: center;
+}
+
 table, th, td {
 	padding: 10px;
 	/* border: 1px solid black; */

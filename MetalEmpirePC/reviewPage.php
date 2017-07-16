@@ -48,6 +48,7 @@
 				session_start();
 				if(isset($_SESSION["username"])) {
 					echo "<input type=\"submit\" value=\"Post Review\">";
+					echo " Logged in as " . $_SESSION["username"];
 				} else {
 					echo "<input type=\"submit\" value=\"Post Review\" disabled><br>";
 					echo "You must be logged in to post reviews!<br>";

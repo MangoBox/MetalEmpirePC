@@ -112,6 +112,7 @@
 
 		<div class = "reviewSection">
 			<h2 class = "title">Reviews</h2>
+			<p class = "reviewTitle_subtitle"><a href = "reviewPage.php"><b>Write a review!</b></a></p>
 			<!-- Reviews-->
 			<?php
 			include("create_user_review.php");
