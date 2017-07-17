@@ -86,6 +86,17 @@
 				echo "<tr><th><hl>Titanium X1</hl></th>";
 				echo "<th><hl>Titanium X2</hl></th>";
 				echo "<th><hl>Titanium X3</hl></th></tr>";
+
+				echo "<tr>";
+				for($t = 6; $t <= 8; $t++) {
+					echo "<th><p style = \"font-size: 35px;\">$" . mysql_result(mysql_query("SELECT productPrice FROM producttable"), $t) . "</p></th>"; 
+				}
+				echo "</tr><tr>";
+				for($g = 0; $g < 3; $g++) {
+					echo "<th><a href=\"order_pc_placeholder.html\"> <img src=\"PurchaseButton.png\" alt=\"Purchase\" style=\"width:60%;height:50%;\"></a></th>";
+				}
+				echo "</tr>";
+
 				
 				for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i++) {
 					echo "<tr><p>";

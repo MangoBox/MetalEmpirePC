@@ -59,7 +59,9 @@
 			
 			<tr><th><hl>Core A1</hl></th>
 				<th><hl>Core A2</hl></th>
-				<th><hl>Core A3</hl></th></tr>
+				<th><hl>Core A3</hl></th>
+
+			</tr>
 
 				<?php
 				$servername = "localhost";
@@ -88,7 +90,16 @@
 				$productName[6] = "Drive 1";
 				$productName[7] = "Drive 2";
 				$productName[8] = "Power Supply";
-
+				
+				echo "<tr>";
+				for($t = 0; $t < 3; $t++) {
+					echo "<th><p style = \"font-size: 35px;\">$" . mysql_result(mysql_query("SELECT productPrice FROM producttable"), $t) . "</p></th>"; 
+				}
+				echo "</tr><tr>";
+				for($g = 0; $g < 3; $g++) {
+					echo "<th><a href=\"order_pc_placeholder.html\"> <img src=\"PurchaseButton.png\" alt=\"Purchase\" style=\"width:60%;height:50%;\"></a></th>";
+				}
+				echo "</tr>";
 
 				for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i++) {
 					echo "<tr><p>";

@@ -6,7 +6,7 @@
 <title>MetalEmpirePC Register</title>
 <body>
 <div>
-		<ul>
+		<!-- <ul>
 			<li><a href="test">Home</a></li>
 		
 			<li class="dropdown">
@@ -19,12 +19,22 @@
 			</li>
 			<li><a href="test">Contact & Support</a></li>
 			<li><a href="test">FAQ</a></li>
-		</ul>
-	</div>
+		</ul> -->
+		<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
+		<div class = "center">
+		<b><p style = "font-size: 50px">Register Account</p></b>
+		<p>
+			<?php
+				session_start();
+				if(isset($_SESSION["username"])) {
+					echo "You are currently logged in!";
+					echo "<br>Welcome, " . $_SESSION["username"] . "!<br><br>";
+					echo "<a href = \"logout.php\"> Logout </a>";
+				}
+			?>
+		</p>
 	<br>
-	<h1 title="test">MetalEmpirePC Register</h1>
 	<br>
-	Want to log in? <a href =  "/MetalEmpirePC/loginPage.php"> Click here! </a>
 	<form method = "post", action="/MetalEmpirePC/user_register.php">
 		<fieldset>
 			<legend>Enter register Information</legend>

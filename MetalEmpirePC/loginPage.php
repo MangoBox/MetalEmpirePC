@@ -6,8 +6,11 @@
 <title>MetalEmpirePC Login</title>
 <body>
 	<br>
+
 	<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
-		<div class = "center"><b><p>
+		<div class = "center">
+		<p style = "font-size: 50px">Log In</p>
+			<p>
 			<?php
 				session_start();
 				if(isset($_SESSION["username"])) {
@@ -16,7 +19,7 @@
 					echo "<a href = \"logout.php\"> Logout </a>";
 				}
 			?>
-		</p></b></b>
+		</p>
 		<form method = "post", action="/MetalEmpirePC/user_login.php">
 			<fieldset>
 				<legend>Enter Login!</legend>
