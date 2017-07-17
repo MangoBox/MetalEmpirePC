@@ -99,11 +99,6 @@
 					echo "</tr></p>";
 				}
 			
-			for($i = 0; $i < mysql_result(mysql_query("SELECT COUNT(*) FROM productdetails"),0); $i ++) {
-				
-				
-			}
-			
 			
 			
 			?>

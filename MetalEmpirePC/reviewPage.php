@@ -1,11 +1,35 @@
 <!DOCTYPE HTML>
 <html> 
-<title>Write Review</title>
+
+<head>
+	<link rel="stylesheet" href="style1.css">
+	<title>Write Review</title>
+</head>
 <body>
 	<br>
 	
 	<br>
 	<form method = "post", action="/MetalEmpirePC/user_review.php">
+	<div style="width: 80%; margin: 0 auto;" align = "middle">
+		<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:60%;height:60%;" align = "middle"></a>
+		<hr>
+		<p class = 'p'>
+			<?php 
+				//This script checks whether the users is logged in.
+			if (session_status() == PHP_SESSION_NONE) { //if there's no session_start yet...
+    			session_start(); //do this
+			}
+			if(isset($_SESSION["username"])) {
+					//If the user is logged in.
+				echo "You are logged in! Welcome, <b>" . $_SESSION["username"] . "</b>!";
+				echo " <a href = logout.php>Logout</a>";
+			} else {
+				echo "You are not logged in. <a href = \"loginPage.php\">Log in<a> or <a href = \"registerPage.php\">register.<a>";
+			}
+			?>			
+		</p>
+	</div>
+	</div>
 	<div style="width: 30%; margin: 0 auto;">
 		<h1 title="test">Write a Review</h1>
 			<fieldset>
@@ -39,20 +63,23 @@
 				<br>
 				<br>
 				<div style="width: 100%; margin: 0 auto;">
-					Review Content: <br><br>
+					<p>Review Content:</p>
 					<textarea rows="6" cols="50" name = "review_text"></textarea>
 				</div>
 				<br>
 				<br>
 				<?php
-				session_start();
+				if (session_status() == PHP_SESSION_NONE) { //if there's no session_start yet...
+    				session_start(); //do this
+				}
+
 				if(isset($_SESSION["username"])) {
-					echo "<input type=\"submit\" value=\"Post Review\">";
 					echo " Logged in as " . $_SESSION["username"];
+					echo "<br><input type=\"submit\" value=\"Post Review\">";
 				} else {
-					echo "<input type=\"submit\" value=\"Post Review\" disabled><br>";
 					echo "You must be logged in to post reviews!<br>";
-					echo "<a href = \"loginPage.php\">Log In</a>";
+					echo "<a href = \"loginPage.php\">Log In</a><br><br>";
+					echo "<input type=\"submit\" value=\"Post Review\" disabled><br>";
 				}
 
 				?>
