@@ -6,6 +6,7 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<style>
 	</style>
+	<title>Core Series</title>
 </head>
 <div style="position: relative; min-height: 100%; top: 0px;">
 	<body>
@@ -36,7 +37,6 @@
 			</tr>
 		</table>
 		<hr>
-		<!-- I'm aware this div attribute is depecrated. Can't be bothered integrating it into CSS (You can fix this daniel if you like :D) -->
 		<div class = 'titleLogin'>
 			<p class = 'p'>
 				<?php 
@@ -54,7 +54,11 @@
 		</div>
 
 		<img src="CoreSeriesBanner.png" alt="Core Series" style="width:100%;height:100%;">
-		
+		<div class = "center">
+			<p style = "font-size: 40px;"><b>Great things come in small packages.</b></p>
+			<p style = "font-size: 35px;">Get work done quickly and efficiently with 7th Generation Intel Processors<br> and ultrafast SanDisk SSDs.</p>
+		</div>
+		<hr>
 		<p><table style="width:75%", table align = "center">
 			
 			<tr><th><hl>Core A1</hl></th>

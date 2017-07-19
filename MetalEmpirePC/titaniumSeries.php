@@ -5,6 +5,7 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<style>
 	</style>
+	<title>Titanium Series</title>
 </head>
 	<div style="position: relative; min-height: 100%; top: 0px;">
 		<body>
@@ -53,6 +54,11 @@
 		</div>
 		<img src="TitaniumBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		<br>
+		
+		<div class = "center">
+			<p style = "font-size: 40px;"><b>Redefines power by smashing the competition.</b></p>
+			<p style = "font-size: 35px;">When pure power is unchained, the Titanium series is the result.<br> Featuring overclockable 7th generation CPUs, <br> powerful water cooling and a gorgeous tempered glass case,<br> the Titanium series knows no bounds.</p>
+		</div>
 		<hr>
 		<p><table style="width:75%", table align = "center">
 			<?php
@@ -119,6 +125,23 @@
 		<hl style font-size = "120px">Features</hl>
 	</div>
 
+	<div class = "featureLeft">
+			<hl><img src = "WaterCooled.png", style = "float: right; padding: 40px"><br><br>Liquid Cooling<br></hl>
+			<p>Air cooling is loud, clunky and most importantly: ineffecient. Corsairs famed H100i provides stunningly cool performance, with stock load temperatures averaging at just 45°C.</p>
+			<p>Its not just powerful. Liquid cooling has proven to be of 75% quieter than stock Intel heatsinks. We guess you could say it's a pretty cool solution. </p>
+		</div>
+	<hr>
+	<div class = "featureRight">
+			<hl><img src = "OverclockTitanium.png", style = "float: left; padding: 40px"><br><br>Unlocked CPUs<br></hl>
+			<p>The sky's the limit with powerful K-series unlocked Intel CPUs. With the H100i liquid cooler, have a blast overclocking your MetalEmpirePC!</p>
+			<p>K-Series CPUs also feature improved core speed, higher memory frequencies and the expandable Z270 chipset. All at the heart of your Titanium-series PC.</p>
+		</div>
+	<hr>
+	<div class = "featureLeft">
+			<hl><img src = "EvolvAtxGlass.png", style = "float: right; padding: 40px"><br><br>Flawless Materials<br></hl>
+			<p>Phanteks beautiful Evolv ATX case features pristine tempered glass side panels, thick aluminium and reinforced framework.</p>
+			<p>Just because it looks awesome doesn't mean its not functional. It can fit up to a whooping 7 hard drives, full-size ATX motherboard and up to a 420mm graphics card. In other words? The case is a work of art in itself.</p>
+		</div>
 	<hr>
 
 		<div class = "reviewSection">

@@ -5,6 +5,7 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<style>
 	</style>
+	<title>Magma Series</title>
 </head>
 	<div style="position: relative; min-height: 100%; top: 0px;">
 		<body>
@@ -54,6 +55,11 @@
 
 		<img src="MagmaSeriesBanner.png" alt="Main Banner" style="width:100%;height:100%;">
 		
+		<div class = "center">
+			<p style = "font-size: 40px;"><b>Imagination sold seperately.</b></p>
+			<p style = "font-size: 35px;">Unleash your creativity with the Magma Series.<br> Featuring powerful Hybrid Storage, Nvidia graphics cards and unbelievable multitasking capabilities.</p>
+		</div>
+		<hr>
 		<p><table style="width:75%", table align = "center">
 			<?php
 				$servername = "localhost";
@@ -115,6 +121,36 @@
 			?>
 		</table>
 	</p>
+
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<div style = "text-align: center;">
+			<hl style = " font-size: 75px">Features</hl>
+	</div>
+	<br>
+	<br>
+
+	<div class = "featureLeft">
+			<hl><img src = "MEPC-NvidiaLogo.png", style = "float: right; padding: 40px"><br><br>Nvidia Graphics<br></hl>
+			<p>The 10-series of Graphics from Nvidia feature the latest-generation features, everything from powersaving fan control to insane graphics performance using the latest Pascal architecture.</p>
+			<p>Whether you buy the Magma B1 with the well-known GT 1030 for budget gaming or a powerful Magma B3 with the legendary value GTX 1050Ti, we've got you covered!</p>
+		</div>
+	<hr>
+
+	<div class = "featureRight">
+			<hl><img src = "HybridFeature.png", style = "float: left; padding: 40px"><br><br>Hybrid storage<br></hl>
+			<p>SSDs are the latest craze of blazingly fast power, but sometimes the comprimise of less storage is simply not worth it.</p>
+			<p>So, we give you the best of both worlds with the Magma series of PCs, giving you the ultra-fast SSD storage plus the mass storage of hard drives for mass storage of videos, games and everything else you can think of.</p>
+		</div>
+	<hr>
+	<div class = "featureLeft">
+			<hl><img src = "SizeMagmaComparison.png", style = "float: right; padding: 40px"><br><br>Compact Size<br></hl>
+			<p>In cramped apartment space, tiny rooms or just claustrophobic areas in general, a large PC is simply inconvient.</p>
+			<p>We cram everything into the awesome Corsair 88R, packing boatloads of power in a small package while still keeping cool even under the heaviest of loads!</p>
+		</div>
 	<hr>
 
 		<div class = "reviewSection">
