@@ -128,6 +128,24 @@
 			</table>
 		</p>
 		<hr>
+		<div class = "featureLeft">
+			<hl><img src = "CoreSize.png", style = "float: right; padding: 40px"><br><br>Smallest case in the World<br></hl>
+			<p>The Core series features the smallest case on the planet: the In Win Chopin. At 3.3 litres in size, it is the ultimate space saver. But that doesn't mean its not capable. We managed to fit a full-size Mini-ITX motherboard, full-height Intel heatsink and a SSD in the Core series!</p>
+			<p>2x USB 3.0 ports and audio jacks on the front panel allows for plentiful I/O in apartments, receptions and presentations. Don't let the size fool you.</p>
+		</div>
+		<hr>
+		<div class = "featureRight">
+			<hl><img src = "7thGen.png", style = "float: left; padding: 40px"><br><br>Full power processors<br></hl>
+			<p>Almost every all-in-one, convertible or small form-factor computer you come across is confined to low-power processors in order to decrease noise, heat and power consumption.</p>
+			<p>Here at MetalEmpirePC, we don't comprimise. We provide full-power 7th Generation Intel Processors to give you the opportunity to do more. Much more.</p>
+		</div>
+		<hr>
+		<div class = "featureLeft">
+			<hl><img src = "QuietFan.png", style = "float: right; padding: 40px"><br><br>Whisper quiet<br></hl>
+			<p>Nobody likes loud PCs. The whirring of a computer can potentially be one of the most distracting noises ever.</p>
+			<p>So instead of hiding your PC away, try the Core series! It features a single high-airflow heatsink fan, which remains dead-quiet until heavy workloads are applied.</p>
+		</div>
+		<hr>
 
 		<div class = "reviewSection">
 			<h2 class = "title">Reviews</h2>

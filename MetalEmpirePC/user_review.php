@@ -52,11 +52,23 @@
 		}
 	}
 
+	$sql_remove_previous_query = "DELETE FROM user_reviews WHERE userID = " . $user_id;
 	$sql_review_query = "INSERT INTO user_reviews (userID, productID, date, rating, reviewText, reviewTitle)
 						VALUES ('$user_id', '$product_query_result', '$date_custom', '$rating', '$review_text', '$review_title')";
-	
+
+	mysql_query($sql_remove_previous_query);
 	mysql_query($sql_review_query);
 
+	//Redirects the user to the product page reviewed. Probably more effecient ways of doing this.
+	$product_return_series = mysql_result(mysql_query("SELECT productSeries FROM producttable WHERE productID = " . $product_query_result),0);
+	if($product_return_series === "A") {
+		header("location:coreSeries.php");
+	} else if ($product_return_series === "B") {
+		header("location:magmaSeries.php");
+	} else if ($product_return_series === "X") {
+		header("location:titaniumSeries.php");
+	}
+ 
 	function echoReturnToLogon() {
 		echo "<br><a href = \"registerPage.php\">Previous Page</a>";
 		//Dodgy, but it works so whatever.

@@ -27,7 +27,7 @@
 				$rating = "<p class = 'yellow_star'>";
 				for($k = 1; $k <= 5; $k++) {
 					//If the rating does not match
-					if(mysql_result(mysql_query("SELECT rating FROM user_reviews"),$i) <= $k) {
+					if(mysql_result(mysql_query("SELECT rating FROM user_reviews"),$i) < $k) {
 						$rating .= "☆";
 					} else {
 						$rating .= "★";
@@ -42,6 +42,18 @@
 				echo $rating;
 				echo "<br><p class = \"review_text\">" . mysql_result(mysql_query("SELECT reviewText FROM user_reviews"),$i) . "</p><br>";
 				
+				//Checking if the session has actually started yet!
+				if (session_status() == PHP_SESSION_NONE) {
+					session_start();
+				}
+
+				if(isset($_SESSION["username"])) {
+					//Checks if the current user iterator matches the session username.
+					if($_SESSION["username"] === $username) {
+						echo "<p><a href = \"reviewPage.php\">Edit Your Review </a></p>";
+						echo "<p><a href = \"delete_review.php\">Delete Review</a></p>";
+					}
+				}
 			}
 		}
 	}
