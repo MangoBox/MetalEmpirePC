@@ -163,48 +163,53 @@ form {
 	}
 /* below is for the navigation bar */
 	
-			ul {
+ 			ul {
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
 				overflow: hidden;
 				background-color: #333333;
+				text-align: center;
 			}
 
 			li {
-				float: left;
+				text-align: center;
+				display: inline-block;
+				position:relative;
+				padding: 12px 2%;
 			}
 
 			li a, .dropbtn {
-				display: inline-block;
+				
 				color: white;
 				text-align: center;
-				padding: 14px 16px;
 				text-decoration: none;
+
 			}
 
 			li a:hover, .dropdown:hover .dropbtn {
 				background-color: #111111;
+
 			}
 
 			li.dropdown {
-				display: inline-block;
+				position: relative;
+    			display: inline-block;
 			}
 
 			.dropdown-content {
 				display: none;
 				position: absolute;
-				background-color: #333333;
-				min-width: 93px;
+				background-color: #cccccc;
+				min-width: 160px;
 				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 				z-index: 1;
 			}
 
 			.dropdown-content a {
 				color: white;
-				padding: 12px 16px;
+				padding: 5px 16px;
 				text-decoration: none;
-				display: block;
 				text-align: left;
 			}
 
