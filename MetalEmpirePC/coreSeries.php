@@ -12,31 +12,26 @@
 	<body>
 		
 
-		<script src="testJavascript.js"></script>
-		<!-- <img src="MainLogoCompact.png" alt="Main Logo" style="width:1298vw;height:184.5vw;"> -->
-		<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
-		<hr>
-		<table style = "width: 100%", table align = "center">
-			<tr>
-				<th>
-					<h2>Reviews</h2>
-				</th>
-				<th>
-					<h2>Forums</h2>
-				</th>
-				<th>
-					<h2>About us</h2>
-				</th>
-				<th>
-					<h2><a href = "loginPage.php">Log In</a></h2>
-				</th>
-				<th>
-					<h2><a href = "registerPage.php">Register</a></h2>
-				</th>
-
-			</tr>
-		</table>
-		<hr>
+	<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
+	<hr>
+	<div>
+		<ul>
+			<li><a href="index.php"><h2>Home</h2></a></li>
+		
+			<li class="dropdown">
+				<a class="dropbtn"><h2>PC Series</h2></a>
+				<div class="dropdown-content">
+					<a href="coreSeries.php"><h2 style = "color: #00b2db;">Core</h2></a>
+					<a href="magmaSeries.php"><h2 style = "color: #ffbb00;">Magma</h2></a>
+					<a href="titaniumSeries.php"><h2 style = "color: #db00b6;">Titanium</h2></a>
+				</div>
+			</li>
+			<li><a href="all_reviews.php"><h2>All Reviews</h2></a></li>
+			<li><a href="loginPage.php"><h2>Log In</h2></a></li>
+			<li><a href="registerPage.php"><h2>Register</h2></a></li>
+		</ul>
+	</div>
+	<hr>
 		<div class = 'titleLogin'>
 			<p class = 'p'>
 				<?php 
