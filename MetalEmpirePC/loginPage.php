@@ -6,7 +6,6 @@
 </head>
 <title>MetalEmpirePC Login</title>
 <body>
-	<br>
 	<a href = "index.php"><img src="MainLogoCompact.png" alt="Main Logo" style="width:75%;height:100%;" align = "middle"></a>
 	<hr>
 	<div>
