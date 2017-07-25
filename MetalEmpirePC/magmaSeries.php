@@ -130,7 +130,7 @@
 
 	<div class = "featureLeft">
 			<hl><img src = "MEPC-NvidiaLogo.png", style = "float: right; padding: 40px"><br><br>Nvidia Graphics<br></hl>
-			<p>The 10-series of Graphics from Nvidia feature the latest-generation features, everything from powersaving fan control to insane graphics performance using the latest Pascal architecture.</p>
+			<p>The 10-series of Graphics from Nvidia feature the latest-generation features, everything from powersaving fan control to awesome graphics performance using the latest Pascal architecture.</p>
 			<p>Whether you buy the Magma B1 with the well-known GT 1030 for budget gaming or a powerful Magma B3 with the legendary value GTX 1050Ti, we've got you covered!</p>
 		</div>
 	<hr>
