@@ -122,7 +122,7 @@
 
 	<div class = "featureLeft">
 			<hl><img src = "WaterCooled.png", style = "float: right; padding: 40px"><br><br>Liquid Cooling<br></hl>
-			<p>Air cooling is loud, clunky and most importantly: ineffecient. Corsairs famed H100i provides stunningly cool performance, with stock load temperatures averaging at just 45°C.</p>
+			<p>Air cooling is loud, clunky and most importantly: inefficient. Corsairs famed H100i provides stunningly cool performance, with stock load temperatures averaging at just 45°C.</p>
 			<p>Its not just powerful. Liquid cooling has proven to be of 75% quieter than stock Intel heatsinks. We guess you could say it's a pretty cool solution. </p>
 		</div>
 	<hr>

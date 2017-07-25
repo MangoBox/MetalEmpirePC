@@ -138,12 +138,12 @@
 	<div class = "featureRight">
 			<hl><img src = "HybridFeature.png", style = "float: left; padding: 40px"><br><br>Hybrid storage<br></hl>
 			<p>SSDs are the latest craze of blazingly fast power, but sometimes the comprimise of less storage is simply not worth it.</p>
-			<p>So, we give you the best of both worlds with the Magma series of PCs, giving you the ultra-fast SSD storage plus the mass storage of hard drives for mass storage of videos, games and everything else you can think of.</p>
+			<p>So, we give you the best of both worlds with the Magma series of PCs, giving you the ultra-fast SSD storage plus the mass storage of hard drives for videos, games and everything else you can think of.</p>
 		</div>
 	<hr>
 	<div class = "featureLeft">
 			<hl><img src = "SizeMagmaComparison.png", style = "float: right; padding: 40px"><br><br>Compact Size<br></hl>
-			<p>In cramped apartment space, tiny rooms or just claustrophobic areas in general, a large PC is simply inconvient.</p>
+			<p>In cramped apartment space, tiny rooms or just claustrophobic areas in general, a large PC is simply inconvenient.</p>
 			<p>We cram everything into the awesome Corsair 88R, packing boatloads of power in a small package while still keeping cool even under the heaviest of loads!</p>
 		</div>
 	<hr>

@@ -132,7 +132,7 @@
 		<div class = "featureRight">
 			<hl><img src = "7thGen.png", style = "float: left; padding: 40px"><br><br>Full power processors<br></hl>
 			<p>Almost every all-in-one, convertible or small form-factor computer you come across is confined to low-power processors in order to decrease noise, heat and power consumption.</p>
-			<p>Here at MetalEmpirePC, we don't comprimise. We provide full-power 7th Generation Intel Processors to give you the opportunity to do more. Much more.</p>
+			<p>Here at MetalEmpirePC, we don't compromise. We provide full-power 7th Generation Intel Processors to give you the opportunity to do more. Much more.</p>
 		</div>
 		<hr>
 		<div class = "featureLeft">
